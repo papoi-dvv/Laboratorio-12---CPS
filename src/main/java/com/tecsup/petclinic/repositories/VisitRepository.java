@@ -1,14 +1,28 @@
 package com.tecsup.petclinic.repositories;
 
-import com.tecsup.petclinic.entities.Visit;
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
+import com.tecsup.petclinic.entities.Visit;
 
+/**
+ * 
+ * @author jgomezm
+ *
+ */
 @Repository
-public interface VisitRepository extends JpaRepository<Visit, Long> {
+public interface VisitRepository 
+	extends JpaRepository<Visit, Integer> {
 
-    // Buscar visitas por el ID de la mascota
-    List<Visit> findByPetId(Long petId);
+	// Fetch visits by petId
+	List<Visit> findByPetId(Integer petId);
+
+	// Fetch visits by Id
+
+	@Override
+	List<Visit> findAll();
+
+
 }

@@ -10,21 +10,16 @@ import lombok.NoArgsConstructor;
  * @author jgomezm
  *
  */
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Builder
-public class VisitDTO {
-
+public class VetDTO {
 
 	private Integer id;
 	
-	private Integer petId;
-
-	private String visitDate;
+	private String firstName;
 	
-	private String description;
-
+	private String lastName;
 
 }
