@@ -10,7 +10,7 @@
 # UNIX or MAC
 spring:
   profiles:
-    active : mysql
+    active : h2
 
 logging :
   # DEBUG, INFO , ERROR
