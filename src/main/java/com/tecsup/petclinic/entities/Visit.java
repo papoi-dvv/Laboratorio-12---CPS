@@ -29,6 +29,5 @@ public class Visit {
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "pet_id")
-	//@ToString.Exclude
 	private Pet pet;
 }
