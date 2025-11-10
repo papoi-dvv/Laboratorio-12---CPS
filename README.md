@@ -10,3 +10,6 @@ mvn clean test -Dspring.profiles.active=h2
 ### Santos Zuasnabar, Paulo Nicolas
 ### Barbaran Contreras, Kevin Piero
 ### Garcia Ccencho, Cristian Rufino
+
+#### Profesor:
+### Jaime Gómez
